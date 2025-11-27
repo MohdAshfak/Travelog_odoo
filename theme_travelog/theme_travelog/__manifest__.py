@@ -76,7 +76,8 @@
         'static/description/travelog_screenshot.gif',
 
     ],
-
+    
+    'live_test_url': 'http://13.48.248.147:8069',
     'license': 'LGPL-3',
     'application': True,
     'installable': True,
