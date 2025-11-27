@@ -64,7 +64,7 @@
                                     </p>
 
                                     <!-- CTA Button -->
-                                    <a t-attf-href="/shop/product/#{pkg.id}"
+                                    <a t-attf-href="/book-now"
                                        class="s_featured_destination_btn btn btn-light rounded-pill px-4 w-100">
                                         <span class="btn-text">Explore Now</span>
                                         <i class="fa fa-arrow-right ms-2 btn-icon"></i>

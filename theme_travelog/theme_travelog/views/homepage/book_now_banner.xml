@@ -12,11 +12,6 @@
             <div class="container position-relative h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-lg-7">
-                        <!-- Badge -->
-<!--                        <div class="s_book_now_banner_badge d-inline-block px-3 py-2 rounded-3 mb-3">-->
-<!--                            <span class="small fw-semibold">Travel Agency</span>-->
-<!--                        </div>-->
-
                         <!-- Main Title -->
                         <h1 class="s_book_now_banner_title display-3 fw-bold text-white mb-4">
                             Plan Tours<br/>

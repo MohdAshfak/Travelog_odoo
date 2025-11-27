@@ -12,6 +12,7 @@ class FeaturedDestination(models.Model):
     fd_image = fields.Binary(string="Image", attachment=True)
     fd_description = fields.Text(string="Description", required=True)
     fd_is_featured = fields.Boolean(string="Show in Website")
+    is_dropdown = fields.Boolean(string="Show in dropdown")
 
     fd_image_base64 = fields.Char(compute='_compute_image_base64')
 

@@ -22,16 +22,31 @@ class PackageBookingController(http.Controller):
             # --- FIX ENDS HERE ---
 
             # 3. Format the Description - Get actual package name
-            package_id = post.get('package_id')
+            package_id_raw = post.get('package_id')
             package_name = 'Custom Inquiry'
             
-            if package_id:
+            if package_id_raw:
                 try:
-                    package = request.env['travel.package'].sudo().browse(int(package_id))
-                    if package.exists():
-                        package_name = package.package_name or package.name
+                    if ',' in package_id_raw:
+                        model_name, record_id = package_id_raw.split(',')
+                        record_id = int(record_id)
+                        
+                        if model_name == 'travel.package':
+                            package = request.env['travel.package'].sudo().browse(record_id)
+                            if package.exists():
+                                package_name = package.package_name or package.name
+                        elif model_name == 'featured.destination':
+                            dest = request.env['featured.destination'].sudo().browse(record_id)
+                            if dest.exists():
+                                package_name = dest.fd_name
+                    else:
+                        # Fallback for old format (assumes travel.package)
+                        package = request.env['travel.package'].sudo().browse(int(package_id_raw))
+                        if package.exists():
+                            package_name = package.package_name or package.name
+
                 except (ValueError, TypeError):
-                    _logger.warning(f"Invalid package_id: {package_id}")
+                    _logger.warning(f"Invalid package_id: {package_id_raw}")
             
             description = (
                 f"📦 Package: {package_name}<br/>"

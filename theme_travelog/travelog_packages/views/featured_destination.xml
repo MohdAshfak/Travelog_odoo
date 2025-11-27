@@ -41,6 +41,7 @@
                         <group>
                             <field name="fd_location" placeholder="e.g. Europe"/>
                             <field name="fd_price"/>
+                             <field name="is_dropdown"/>
                             <field name="fd_is_featured"/>
                         </group>
                         <group>

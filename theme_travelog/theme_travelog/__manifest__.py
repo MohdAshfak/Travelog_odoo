@@ -4,16 +4,30 @@
     'category': 'Theme',
     'version': '19.0.1.0',
     'author': 'XAPP',
+    'summary': """TRAVELOG modern Odoo travel theme designed for travel agencies, tour operators, and holiday package websites. 
+                It offers dynamic tour packages, resort listings, destination highlights, booking forms, and a beautifully animated UI for a complete travel booking experience.""",
+
+    'description': """
+            Travelog - A complete travel, tourism, booking and holiday package theme for Odoo.
+            Includes features for tour packages, hotels, resorts, villas, travel booking, itinerary and more.
+            """,
+
+    'license': 'OPL-1',
+    'support': 'teamxapp.dev@gmail.com',
+    'price': 109.00,
+    'currency': 'USD',
+
     'depends': [
         'website',
         'theme_default',
         'travelog_packages',
-        
+
     ],
     'data': [
         'views/theme_travelog_inherited.xml',
         'views/navbar.xml',
         'views/footer.xml',
+
         'views/homepage/sub_content.xml',
         'views/homepage/marque_text.xml',
         'views/homepage/single_card.xml',
@@ -27,7 +41,6 @@
         'views/services/services_section.xml',
         'views/blog/blog_snippets.xml',
         'views/homepage/s_contact_us.xml',
-
         'views/homepage/hero.xml',
         'views/about/about_page.xml',
 
@@ -42,7 +55,6 @@
             '/theme_travelog/static/src/scss/insights_banner.scss',
             '/theme_travelog/static/src/scss/services_section.scss',
             '/theme_travelog/static/src/scss/about_page.scss',
-            # '/theme_travelog/static/src/scss/hero_section.scss',
 
             '/theme_travelog/static/src/js/navbar.js',
             '/theme_travelog/static/src/js/book_now_banner.js',
@@ -58,12 +70,10 @@
         ],
     },
 
-
     'images': [
 
-        'static/description/theme_travelog_cover.jpg',
-
-        'static/description/theme_travelog_screenshot.jpg',
+        'static/description/travelog_cover.gif',
+        'static/description/travelog_screenshot.gif',
 
     ],
 

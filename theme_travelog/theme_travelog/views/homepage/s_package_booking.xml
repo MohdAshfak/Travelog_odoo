@@ -26,7 +26,10 @@
                                     <select name="package_id" class="form-select form-select-lg bg-light border-0" required="required">
                                         <option value="" selected="selected" disabled="disabled">Select a Package...</option>
                                         <t t-foreach="request.env['travel.package'].sudo().search([('is_dropdown', '=', True)])" t-as="package">
-                                            <option t-att-value="package.id" t-esc="package.package_name or package.name"/>
+                                            <option t-att-value="'travel.package,%s' % package.id" t-esc="package.package_name or package.name"/>
+                                        </t>
+                                        <t t-foreach="request.env['featured.destination'].sudo().search([('is_dropdown', '=', True)])" t-as="dest">
+                                            <option t-att-value="'featured.destination,%s' % dest.id" t-esc="dest.fd_name"/>
                                         </t>
                                     </select>
                                 </div>

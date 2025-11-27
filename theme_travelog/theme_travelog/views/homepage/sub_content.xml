@@ -3,7 +3,7 @@
     <template id="s_travelog_cards" name="Sub Content">
 
         <section class="s_travelog_cards pt-5 pb-5">
-            <t t-set="packages" t-value="request.env['travel.package'].sudo().search([])"/>
+            <t t-set="packages" t-value="request.env['travel.package'].sudo().search([('is_featured', '=', True)])"/>
 
             <div class="container">
                 <div class="row g-3 travelog_cards_container">

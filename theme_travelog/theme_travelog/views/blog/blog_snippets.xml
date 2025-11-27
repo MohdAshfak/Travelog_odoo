@@ -151,7 +151,7 @@
                                                  class="author-avatar"/>
                                             <span class="author-name">Sarah Johnson</span>
                                         </div>
-                                        <a href="/blog/bali-paradise" class="read-more-link">
+                                        <a href="/blog" class="read-more-link">
                                             Read More <i class="fa fa-arrow-right ms-1"></i>
                                         </a>
                                     </div>
@@ -193,7 +193,7 @@
                                                  class="author-avatar"/>
                                             <span class="author-name">Mike Anderson</span>
                                         </div>
-                                        <a href="/blog/iceland-guide" class="read-more-link">
+                                        <a href="/blog" class="read-more-link">
                                             Read More <i class="fa fa-arrow-right ms-1"></i>
                                         </a>
                                     </div>
@@ -235,7 +235,7 @@
                                                  class="author-avatar"/>
                                             <span class="author-name">Emma Davis</span>
                                         </div>
-                                        <a href="/blog/budget-travel-tips" class="read-more-link">
+                                        <a href="/blog" class="read-more-link">
                                             Read More <i class="fa fa-arrow-right ms-1"></i>
                                         </a>
                                     </div>

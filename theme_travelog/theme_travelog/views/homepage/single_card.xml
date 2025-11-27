@@ -12,7 +12,7 @@
                         <p class="travelog_subtitle text-muted">
                             Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra dui...
                         </p>
-                        <a href="#" class="btn btn-primary travelog_explore_btn mt-3">Explore</a>
+                        <a href="/packages" class="btn btn-primary travelog_explore_btn mt-3">Explore</a>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="travelog_hero_image">
